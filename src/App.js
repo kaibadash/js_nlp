@@ -48,6 +48,7 @@ function App() {
   return (
     <div className="App">
       <h1>Segmenter Test</h1>
+      <p>使用頻度が高い上位30を表示する。</p>
       <button onClick={setYoshinoya}>吉野家コピペでテスト</button>
       <button onClick={setRuizu}>ルイズコピペでテスト</button>
       <textarea value={text} onChange={handleChange} />
@@ -57,6 +58,9 @@ function App() {
         <YAxis />
         <Tooltip />
       </BarChart>
+      <p>
+        <a href="https://github.com/kaibadash/js_nlp">GitHub</a>
+      </p>
     </div>
   );
 }
